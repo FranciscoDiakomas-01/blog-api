@@ -20,7 +20,6 @@ services:
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: postgres
       POSTGRES_DB: blogdb
-      DATABASE_URL: postgres://postgres:postgres@db:5432/blogdb
     ports:
       - "5433:5432"
     volumes:

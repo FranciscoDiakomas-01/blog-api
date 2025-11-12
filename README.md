@@ -90,6 +90,8 @@ http://localhost:3000/docs
 
 # Subir containers
 docker-compose up -d --build
+docker-compose run --rm api npx prisma generate
+docker-compose run --rm api npx prisma migrate dev --name init
 
 # Verificar logs da API
 docker-compose logs -f api
