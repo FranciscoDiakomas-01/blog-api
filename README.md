@@ -67,7 +67,7 @@ npm run dev
 npm ci
 
 EM PRODUÇÃO
-docker compose up -d --build
-docker compose run api npx prisma migrate deploy
-docker compose logs -f api
+docker-compose up -d --build
+docker-compose logs -f api
+
 

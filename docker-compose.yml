@@ -6,7 +6,7 @@ services:
     container_name: blog-api
     restart: always
     ports:
-      - "3000:3000"
+      - "3000:8080"
     env_file:
       - .env
     depends_on:
