@@ -6,7 +6,7 @@ services:
     container_name: blog-api
     restart: always
     ports:
-      - "3000:8080"
+      - "8000:8080"
     env_file:
       - .env
     depends_on:
@@ -21,7 +21,7 @@ services:
       POSTGRES_PASSWORD: postgres
       POSTGRES_DB: blogdb
     ports:
-      - "5433:5432"
+      - "5432:5432"
     volumes:
       - pgdata:/var/lib/postgresql/data
 
