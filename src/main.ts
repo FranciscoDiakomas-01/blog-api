@@ -38,7 +38,7 @@ async function bootstrap() {
     }),
   );
   app.enableShutdownHooks();
-  await app.listen(process.env.PORT ?? 3000);
+  await app.listen(8000);
   logger.debug(`Server running on ${await app.getUrl()}`);
   logger.debug(`Documentation running on ${await app.getUrl()}/docs`);
 }
